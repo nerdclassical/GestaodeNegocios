@@ -111,6 +111,6 @@ GestaodeNegocios/
 Os campos marcados como **[VALIDAR]** não devem ser tratados como fato observado. Eles representam hipóteses preparadas para a entrevista/observação da equipe e precisam receber fonte, data e responsável quando forem validados.
 
 ##Integrantes 
-Marcos Antonio Ferreira Lima 
-Dhiogo Carneiro 
+Marcos Antonio Ferreira Lima,
+Dhiogo Carneiro ,
 Dheimerson 
