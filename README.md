@@ -109,3 +109,8 @@ GestaodeNegocios/
 ## Estado das evidências que dependem de contato com usuário real
 
 Os campos marcados como **[VALIDAR]** não devem ser tratados como fato observado. Eles representam hipóteses preparadas para a entrevista/observação da equipe e precisam receber fonte, data e responsável quando forem validados.
+
+##Integrantes 
+Marcos Antonio Ferreira Lima 
+Dhiogo Carneiro 
+Dheimerson 
