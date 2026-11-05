@@ -1,0 +1,26 @@
+classDiagram
+    Categoria "1" -- "0..*" Produto : classifica
+    Usuario "1" -- "0..*" Venda : registra
+    Cliente "0..1" -- "0..*" Venda : realiza
+    Venda "1" *-- "1..*" ItemVenda : possui
+    Produto "1" -- "0..*" ItemVenda : referenciado em
+    Venda "0..1" -- "0..*" LancamentoFinanceiro : gera
+
+    class Produto {
+        +String nome
+        +BigDecimal preco
+        +Integer quantidadeEstoque
+        +Boolean ativo
+    }
+    class Venda {
+        +LocalDateTime dataHora
+        +StatusVenda status
+        +BigDecimal valorTotal
+        +calcularTotal()
+        +confirmar()
+    }
+    class ItemVenda {
+        +Integer quantidade
+        +BigDecimal precoUnitario
+        +BigDecimal subtotal
+    }

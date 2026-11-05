@@ -1,0 +1,7 @@
+erDiagram
+    CATEGORIA ||--o{ PRODUTO : contem
+    USUARIO ||--o{ VENDA : realiza
+    CLIENTE |o--o{ VENDA : participa
+    VENDA ||--|{ ITEM_VENDA : inclui
+    PRODUTO ||--o{ ITEM_VENDA : compoe
+    VENDA |o--o{ LANCAMENTO_FINANCEIRO : origina

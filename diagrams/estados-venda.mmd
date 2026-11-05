@@ -1,0 +1,6 @@
+stateDiagram-v2
+    [*] --> RASCUNHO : Operador inicia venda
+    RASCUNHO --> CONFIRMADA : Carrinho válido + Estoque OK + Confirmação
+    RASCUNHO --> CANCELADA : Operador descarta carrinho
+    CONFIRMADA --> CANCELADA : Cancelamento por regra de negócio (estorna estoque)
+    CANCELADA --> [*]

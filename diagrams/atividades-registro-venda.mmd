@@ -1,0 +1,12 @@
+flowchart TD
+    A([Início: Abrir Nova Venda]) --> B[Pesquisar e selecionar produto]
+    B --> C[Informar quantidade]
+    C --> D{Quantidade > 0 e Estoque disponível?}
+    D -- Não --> E[Exibir alerta de estoque insuficiente]
+    E --> B
+    D -- Sim --> F[Adicionar item ao carrinho e atualizar total]
+    F --> G{Adicionar mais itens?}
+    G -- Sim --> B
+    G -- Não --> H[Confirmar Venda]
+    H --> I[Gravar venda, itens e decrementar estoque em transação única]
+    I --> J([Fim: Exibir comprovante da venda])

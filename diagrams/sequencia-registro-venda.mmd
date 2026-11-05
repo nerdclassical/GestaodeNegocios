@@ -1,0 +1,21 @@
+sequenceDiagram
+    actor Operador
+    participant VendaController
+    participant VendaService
+    participant EstoqueService
+    participant VendaRepository
+
+    Operador->>VendaController: POST /vendas/confirmar (itens)
+    VendaController->>VendaService: confirmarVenda(dto)
+    VendaService->>EstoqueService: validarEBaixarEstoque(itens)
+    alt Estoque suficiente
+        EstoqueService-->>VendaService: Estoque atualizado
+        VendaService->>VendaRepository: save(venda)
+        VendaRepository-->>VendaService: Venda persistida
+        VendaService-->>VendaController: VendaConfirmadaDTO
+        VendaController-->>Operador: Exibe tela venda-confirmada
+    else Estoque insuficiente
+        EstoqueService-->>VendaService: EstoqueInsuficienteException
+        VendaService-->>VendaController: Rollback transacional
+        VendaController-->>Operador: Exibe erro venda-sem-estoque
+    end

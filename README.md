@@ -79,7 +79,7 @@ O MVP foi escolhido como fatia vertical porque passa por interface, regra de neg
 
 A escolha de Thymeleaf, em vez de uma SPA separada, reduz a complexidade de integração para um projeto acadêmico inicial e concentra o esforço nas regras de negócio e na engenharia do sistema.
 
-## Estrutura prevista
+## Estrutura do Repositório (Capítulos 1 a 8)
 
 ```text
 GestaodeNegocios/
@@ -89,6 +89,8 @@ GestaodeNegocios/
 ├── DESCOBERTA.md
 ├── REQUISITOS.md
 ├── PROJETO.md
+├── ARQUITETURA.md
+├── TESTES.md
 ├── CHANGELOG.md
 ├── .gitignore
 ├── diagrams/
@@ -110,7 +112,7 @@ GestaodeNegocios/
 
 Os campos marcados como **[VALIDAR]** não devem ser tratados como fato observado. Eles representam hipóteses preparadas para a entrevista/observação da equipe e precisam receber fonte, data e responsável quando forem validados.
 
-##Integrantes 
-Marcos Antonio Ferreira Lima,
-Dhiogo Carneiro ,
-Dheimerson 
+## Integrantes
+
+- Dheimerson Sousa Leal
+- Dhiogo Carneiro
